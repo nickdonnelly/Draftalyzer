@@ -127,3 +127,12 @@ func GetHeroNameFromId(heroid uint) string{
     return "Unknown hero."
   }
 }
+
+func GetHeroIdFromName(heroname string) uint{
+  for k, v := range heroes {
+    if v == heroname{
+      return k
+    }
+  }
+  return 999 // TODO: use better zero for this
+}

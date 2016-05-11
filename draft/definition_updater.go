@@ -21,11 +21,11 @@ type DefinitionUpdater struct{
   heroes []string
 }
 
-func (updater *DefinitionUpdater) getMode() DefinitionUpdaterMode{
+func (updater *DefinitionUpdater) GetMode() DefinitionUpdaterMode{
   return updater.mode
 }
 
-func (updater *DefinitionUpdater) setMode(newMode DefinitionUpdaterMode) bool{
+func (updater *DefinitionUpdater) SetMode(newMode DefinitionUpdaterMode) bool{
   updater.Reset()
   updater.mode = newMode
   if updater.mode == newMode {
@@ -35,7 +35,7 @@ func (updater *DefinitionUpdater) setMode(newMode DefinitionUpdaterMode) bool{
   }
 }
 
-func (updater *DefinitionUpdater) getStatus() DefinitionUpdaterStatus{
+func (updater *DefinitionUpdater) GetStatus() DefinitionUpdaterStatus{
   return updater.status
 }
 
@@ -50,6 +50,7 @@ func (updater *DefinitionUpdater) Reset() bool{
   }
 }
 
+// TODO: (u.e external class)
 func (updater *DefinitionUpdater) Update() bool{
   return false // false = not succesful
 }
