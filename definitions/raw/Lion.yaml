@@ -34,6 +34,8 @@ movement_speed: 390
 turn_rate: 0.5
 day_vision: 1800
 night_vision: 800
+attack_point: 0.43
+attack_backswing: 0.74
 attack_range: 600
 attack_projectile_speed: 1000
 magic_resist: 0.25 #percentage

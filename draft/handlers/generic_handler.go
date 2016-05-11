@@ -6,6 +6,7 @@ import (
 
 type Handler struct {
   hero_id uint
+  reusable bool
   fields map[string]interface{}
 }
 

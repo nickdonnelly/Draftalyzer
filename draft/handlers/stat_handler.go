@@ -11,6 +11,7 @@ type StatHandler struct{
 
 func NewStatHandler() *StatHandler {
   var handler = StatHandler{}
+  handler.reusable = true
   // handler.AddField("status", STATUS_IDLE)
   return &handler
 }
@@ -28,6 +29,19 @@ func (handler *StatHandler) SetHeroById(hero_id uint) bool{
   if handler.statusFree(){
     handler.hero_id = hero_id
     return true
+  }else{
+    return false
+  }
+}
+
+func (handler *StatHandler) SetHeroByName(hero_name string) bool{
+  if handler.statusFree(){
+    if id := draft.GetHeroIdFromName(hero_name); id != 999 {
+      handler.hero_id = id
+      return true
+    }else{
+      return false
+    }
   }else{
     return false
   }
