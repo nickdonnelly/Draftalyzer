@@ -8,29 +8,33 @@ int: 22
 str_gain: 1.7
 agi_gain: 1.5
 int_gain: 3.0
-base_hp: 200
-lvl1_hp: 520
-base_hp_regen: 0.25
-lvl1_hp_regen: 0.73
-base_mana: 50
-lvl1_mana: 314
-base_mana_regen: 0.01
-lvl1_hp_regen: 0.89
-base_armor: -1.0
-lvl1_armor: 1.14
-base_attacks_per_second: 0.58
-lvl1_attacks_per_second: 0.67
-base_spell_amp: 0 #percentage
-lvl1_spell_amp: 0.0138 #percentage
-base_attack_damage_low: 37
-base_attack_damage_high: 33
-lvl1_attack_damage_low: 49
-lvl1_attack_damage_high: 55
+base:
+  hp: 200
+  hp_regen: 0.25
+  mana: 50
+  mana_regen: 0.01
+  armor: -1.0
+  attacks_per_second: 0.58
+  spell_amp: 0 #percentage
+  attack_damage_low: 33
+  attack_damage_high: 37
+
+lvl1:
+  hp: 520
+  hp_regen: 0.73
+  mana: 314
+  mana_regen: 0.89
+  armor: 1.14
+  attacks_per_second: 0.67
+  spell_amp: 0.0138 #percentage
+  attack_damage_low: 49
+  attack_damage_high: 55
+
 movement_speed: 390
 turn_rate: 0.5
 day_vision: 1800
 night_vision: 800
 attack_range: 600
 attack_projectile_speed: 1000
-base_magic_resist: 0.25 #percentage
+magic_resist: 0.25 #percentage
 collision_size: 24 #for body blocking
