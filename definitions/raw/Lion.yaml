@@ -48,6 +48,8 @@ spells:
   stuns_cooldowns: [12]
   stuns_ranges: [950]
   stuns_targets: ['multi'] #multi if stun can hit more than 1 person, single otherwise
+  stuns_cast_points: [0.3]
+  stuns_cast_backswings: [0.0]
   disables_durations: [4.0] # Disables count for silences too
   disables_manacosts: [200]
   disables_cooldowns: [12]
@@ -55,8 +57,17 @@ spells:
   disables_targets: ['single'] #multi if stun can hit more than 1 person, single otherwise
   disables_can_cast: [false]
   disables_can_items: [false]
+  disables_cast_points: [0]
+  disables_cast_backswings: [0.53]
   nukes_damage: [260, 850]
   nukes_cooldowns: [12, 40]
   nukes_manacosts: [160, 650]
   nukes_ranges: [950, 900]
   nukes_targets: ['multi', 'single']
+  nukes_cast_points: [0.3, 0.3]
+  nukes_cast_backswings: [0.0, 0.5]
+  utilities_manacosts: [10]
+  utilites_cooldowns: [4]
+  utilities_ranges: [850]
+  utilites_cast_points: [0.3]
+  utilities_cast_backswings: [0.0]
